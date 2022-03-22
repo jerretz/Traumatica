@@ -15,8 +15,8 @@ public class GUI extends JFrame implements KeyListener {
     private Control control;
 
     public GUI(){
-       this.setLayout(new BorderLayout());
-
+        gameOverWindow();
+        /*this.setLayout(new BorderLayout());
         //imagePanel = new ImagePanel(image);
         //this.add(imagePanel, BorderLayout.NORTH);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -28,10 +28,17 @@ public class GUI extends JFrame implements KeyListener {
         this.setVisible(true);
         //this.control = c;
        // imagePanel.addKeyListener(this);
-        //imagePanel.requestFocus();
+        //imagePanel.requestFocus();*/
     }
 
+    public void gameOverWindow() {
 
+        JFrame gameOver = new JFrame("ss");
+        gameOver.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        gameOver.setLocation(50,300);
+        gameOver.setSize(600,600);
+        gameOver.setVisible(true);
+    }
 
 
 public class ImagePanel extends Panel {

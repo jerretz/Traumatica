@@ -16,9 +16,31 @@ public class Control implements Runnable {
     }
 
    public void movePlayer(String d){
+        switch(d){
+            case "left":
+                if(){
+                    spieler.steuerung("left");
+                }
 
-        spieler.steuerung("left");
-        //......
+                break;
+            case "right":
+                if(){
+                    spieler.steuerung("right");
+                }
+                break;
+            case "up":
+                if(){
+                    spieler.steuerung("up");
+                }
+                break;
+            case "down":
+                if(){
+                    spieler.steuerung("down");
+                }
+                break;
+        }
+
+
 
     }
 
